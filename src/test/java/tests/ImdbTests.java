@@ -1,3 +1,5 @@
+package tests;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.ActorPage;
@@ -9,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class ImdbTests {
 
     @Test
-    public void testGoogleSearch() {
+    public void testImdb() {
 
         // Open imdb.com
         open("https://www.imdb.com");
