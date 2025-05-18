@@ -18,7 +18,7 @@ public class TitleDetailsPage {
 
     public String getActorName(int index) {
         return $$(actorNameSelector)
-                .get(index - 1)
+                .get(index)
                 .text();
     }
 

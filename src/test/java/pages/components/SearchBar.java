@@ -12,7 +12,7 @@ public class SearchBar {
     }
 
     public String getResultTitle(int index) {
-        return $$(".searchResult__constTitle").get(index - 1).text();
+        return $$(".searchResult__constTitle").get(index).text();
     }
 
     public TitleDetailsPage openResult(String title) {

@@ -22,7 +22,7 @@ public class ImdbTests {
         searchBar.search("QA");
 
         // When dropdown opens, save the name of the first title
-        String firstSearchResult = searchBar.getResultTitle(1);
+        String firstSearchResult = searchBar.getResultTitle(0);
 
         // Click on the first title
         TitleDetailsPage titleDetailsPage = searchBar.openResult(firstSearchResult);
@@ -37,7 +37,7 @@ public class ImdbTests {
                 "Expected more than 3 top cast members, but found: " + topCastCount);
 
         // Click on the 3rd profile in the "top cast section"
-        String thirdActorName = titleDetailsPage.getActorName(3);
+        String thirdActorName = titleDetailsPage.getActorName(2);
         ActorPage actorPage = titleDetailsPage.openActorPage(thirdActorName);
 
         // Verify that correct profile have opened
